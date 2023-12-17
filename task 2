@@ -1,0 +1,35 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+uber_df = pd.read_csv("/content/uber-raw-data-sep14.csv")
+
+uber_df.tail(10)
+
+#uber_df.head(10)
+uber_df[:10]
+
+uber_df.shape
+
+uber_df.size
+
+uber_df.info()
+
+uber_df.isnull().values.any()
+
+uber_df.isnull().values.sum()
+
+uber_df.isnull().sum()
+
+df =uber_df.dropna()
+df.isnull().values.any()
+
+df.shape
+
+uber_df.describe()
+
+uber_df.describe()
+
+uber_df.head(2)
+
+
